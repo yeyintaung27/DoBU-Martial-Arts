@@ -1,0 +1,238 @@
+@media(max-width:1024px){
+    .hamburger{
+        margin-right: 1rem;
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #05ff1a;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+
+.nav-menu .nav-item a{
+    color: #000;
+}
+  
+    .nav-menu.active{
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 1036px) {
+    .counter-up{
+      padding: 50px 50px 0 50px;
+    }
+    .counter-up .content .box{
+      width: calc(50% - 30px);
+      margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .counter-up .content .box{
+      width: 100%;
+    }
+
+    .main-parent{
+      width: 350px;
+      margin: 7rem auto 2rem;
+  }
+
+  .form-wrap form .account-have{
+    font-size: 12px;
+  }
+
+  .form-wrap form h1{
+    font-size: 2rem;
+  }
+  }
+
+  @media screen and (max-width: 410px) {
+    .main-parent{
+      width: 300px;
+    }
+    .form-wrap form .submit-button button.button{
+      padding: 10px 20px;
+    }
+
+  }
+  @media screen and (max-width: 500px) {
+    .wrapper{
+      padding: 20px;
+    }
+    .counter-up{
+      padding: 30px 20px 0 20px;
+    }
+}
+
+@media(max-width: 820px){
+  .header-box .header-title{
+    font-size: 1.7rem;
+  }
+  .header-box .header-text{
+    letter-spacing: 1px;
+  }
+}
+
+@media(max-width: 1280px){
+  .popular-class .class-card{
+    margin: 3rem;
+  }
+}
+
+@media(max-width: 650px){
+  .header-box .header-title{
+    font-size: 1.5rem;
+  }
+  .header-box .header-text{
+    letter-spacing: 0;
+  }
+}
+
+@media(max-width: 480px){
+  .header-box .header-title{
+    font-size: 1.2rem;
+  }
+  .header-box .header-text{
+    font-size: 0.9rem;
+  }
+
+  .container{
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 880px){
+  
+  .contact-box .left iframe{
+    width: 100%;
+    height: 500px;
+}
+  .contact-box{
+    grid-template-columns: 1fr;
+  }
+   
+}
+
+@media screen and (max-width: 720px){
+  .about-us .container{
+    padding: 0;
+  }
+    
+  .sitemap-box ul{
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .about-us .about-image{
+    width: 300px;
+    height: 200px;
+}
+}
+
+@media screen and (max-width: 620px){
+  .privacy-policy .privacy-image{
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .classdetail .classdetail-btn{
+    width: 300px;
+    height: 100px;
+  }
+
+  .classdetail-btn a{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #000;
+    font-size: 13px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+}
+
+@media screen and (max-width: 600px) {
+	.schedule table {
+	  border: 0;
+	}
+  
+	.schedule table caption {
+	  font-size: 1.3em;
+	}
+	
+	.schedule table thead {
+	  border: none;
+	  clip: rect(0 0 0 0);
+	  height: 1px;
+	  margin: -1px;
+	  overflow: hidden;
+	  padding: 0;
+	  position: absolute;
+	  width: 1px;
+	}
+	
+	.schedule table tr {
+	  border-bottom: 3px solid #ddd;
+	  display: block;
+	  margin-bottom: .625em;
+	}
+	
+	.schedule table td {
+	  border-bottom: 1px solid #ddd;
+	  display: block;
+	  font-size: .8em;
+	  text-align: right;
+	}
+	
+	.schedule table td::before {
+	  /*
+	  * aria-label has no advantage, it won't be read inside a table
+	  content: attr(aria-label);
+	  */
+	  content: attr(data-label);
+	  float: left;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	}
+	
+	.schedule table td:last-child {
+	  border-bottom: 0;
+	}
+  }
+
+  @media screen and (max-width: 780px) {
+    .member-option .basic-option,.special-option{
+      width: 400px;
+      margin: auto;
+  }
+  }
+
+  @media screen and (max-width: 460px) {
+    .member-option .basic-option,.special-option{
+      width: 300px;
+      margin: auto;
+  }
+}
